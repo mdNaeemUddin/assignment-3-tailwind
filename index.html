@@ -10,24 +10,28 @@
     <link rel="stylesheet" href="style.css">
     <!-- favicon  -->
     <link rel="shortcut icon" href="Images/4.png" type="image/x-icon">
-    <!-- font awesome -->
+    <!-- font : google fonts : monrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome icon -->
+    <script src="https://kit.fontawesome.com/85ca8f8b55.js" crossorigin="anonymous"></script>
+
     <!-- tailwind & daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- <script src="tailwind.config.js"></script> -->
+    <!-- user defined color -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        
+                        'primary-color': '#FF4240'
+
                     }
                 }
             }
@@ -37,8 +41,218 @@
 
 </head>
 
-<body>
-    
+<body class="mon-rope">
+    <!-- header section -->
+    <header class="container mx-auto mt-10 mb-20">
+        <!-- nav bar -->
+        <!-- <nav class="flex justify-between items-center mb-10">
+            <div>
+                <a class="flex lg:hidden" href="#">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    <h1>Hockey<span>'</span>s</h1>
+                </a>
+            </div>
+            <div class="flex justify-between space-x-72">
+
+                <h1 class="text-4xl font-extrabold">Hockey<span class="text-primary-color">'</span>s</h1>
+
+                <ul class="flex lg:gap-9 text-base">
+                    <li class="text-primary-color font-bold"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center">
+                <i class="fa-solid fa-magnifying-glass  flex"></i>
+                <button class="btn bg-primary-color text-white lg:ml-5 text-xl font-bold">Get Ticket</button>
+            </div>
+        </nav> -->
+        <!-- banner section -->
+        <section class="lg:relative">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="lg:w-[510px] bg-black text-white border-none rounded-md p-8 space-y-4 lg:absolute lg:right-8 lg:bottom-8">
+                <h3 class="sm:text-lg lg:text-2xl">Meet all the heroes from the field</h3>
+                <p class="text-base text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad exercitationem rerum quisquam nemo omnis
+                    voluptas distinctio impedit temporibus inventore dolorum?Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Praesentium voluptate earum quidem corporis natus hic eius quae doloremque
+                    aspernatur sit.
+                </p>
+            </div>
+        </section>
+    </header>
+    <!-- main section : main content -->
+    <main class="container mx-auto">
+        <!-- hockey club -->
+        <section class="mb-20">
+            <div class="space-y-3 p-4">
+                <h2 class="text-4xl font-extrabold lg:text-center">
+                    Professional Hockeys Club
+                </h2>
+                <p class="lg:w-[607px] lg:mx-auto text-justify">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta excepturi repellendus dolore
+                    possimus, ex et explicabo aperiam unde consequuntur voluptatem. Sequi autem ut rerum iusto eligendi
+                    odit iure? Deleniti, quisquam.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-4 pt-12">
+                <div class="p-5 text-center space-y-2 mr-3">
+                    <div class="radial-progress text-primary" style="--value:85;" role="progressbar">85%</div>
+                    <h3>
+                        Prayer Facility
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
+                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    </p>
+                </div>
+                <div class="p-5 text-center space-y-2 mr-3">
+                    <div class="radial-progress text-secondary" style="--value:65;" role="progressbar">65%</div>
+                    <h3>
+                        Prayer Facility
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
+                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    </p>
+                </div>
+                <div class="p-5 text-center space-y-2 mr-3">
+                    <div class="radial-progress text-errpr" style="--value:78;" role="progressbar">78%</div>
+                    <h3>
+                        Prayer Facility
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
+                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    </p>
+                </div>
+                <div class="p-5 text-center space-y-2 mr-3">
+                    <div class="radial-progress text-success" style="--value:60;" role="progressbar">60%</div>
+                    <h3>
+                        Prayer Facility
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
+                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- program-section -->
+        <section class="mb-20">
+            <div class="space-y-3 p-4">
+                <h2 class="text-4xl font-extrabold lg:text-center">
+                    Program Sections
+                </h2>
+                <p class="lg:w-[607px] lg:mx-auto lg:text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, necessitatibus consectetur minima
+                    laboriosam totam voluptates qui dignissimos voluptas. Nostrum hic nesciunt exercitationem minus
+                    inventore sapiente rem temporibus culpa ducimus distinctio? Debitis voluptates blanditiis ipsa
+                    commodi alias unde distinctio, impedit tempora.
+                </p>
+            </div>
+            <div class="mt-20 flex-col space-y-4">
+                <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div class="hero rounded-e-2xl" style="background-image: url(Images/3.png);">
+                        <div class="bg-opacity-50"></div>
+                        <div class="text-left text-white">
+                            <div class="pt-24 p-10">
+                                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur vero
+                                    rerum nemo quaerat ipsa veritatis aliquam laudantium omnis id labore, soluta minus sequi
+                                    ad adipisci sapiente! Consequatur earum sequi sed? Rem nisi voluptatibus esse? Earum
+                                    quisquam itaque voluptates reiciendis.</p>
+                                <button class="btn btn-primary">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero rounded-2xl" style="background-image: url(Images/3.png);">
+                        <div class="bg-opacity-50"></div>
+                        <div class="text-left text-white">
+                            <div class="pt-24 p-10">
+                                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur vero
+                                    rerum nemo quaerat ipsa veritatis aliquam laudantium omnis id labore, soluta minus sequi
+                                    ad adipisci sapiente! Consequatur earum sequi sed? Rem nisi voluptatibus esse? Earum
+                                    quisquam itaque voluptates reiciendis.</p>
+                                <button class="btn btn-primary">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="hero rounded-2xl" style="background-image: url(Images/4.png);">
+                        <div class="bg-opacity-50"></div>
+                        <div class="text-left text-white">
+                            <div class="pt-52 p-10">
+                                <h1 class="mb-5 text-5xl font-bold">Junior Program</h1>
+                                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tenetur vero
+                                    rerum nemo quaerat ipsa veritatis aliquam laudantium omnis id labore, soluta minus sequi
+                                    ad adipisci sapiente! Consequatur earum sequi sed? Rem nisi voluptatibus esse? Earum
+                                    quisquam itaque voluptates reiciendis.</p>
+                                <button class="btn btn-primary">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- new products section -->
+        <section>
+            <div class="mb-20">
+                <h2 class="text-4xl font-extrabold lg:text-center">
+                    Our New Products
+                </h2>
+                <p class="lg:w-[607px] mx-auto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt vitae voluptates enim delectus harum minus id officia quis ipsa labore tempora, libero, sapiente quibusdam? Maiores dolorum, aperiam suscipit ullam officiis, porro reprehenderit sunt iste nihil, ratione sint quo. Sequi, consequuntur?
+                </p>
+            </div>
+            <div>
+                <div>
+                    <img src="Images/5.png" alt="">
+                    
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
