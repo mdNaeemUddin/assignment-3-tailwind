@@ -30,7 +30,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'primary-color': '#FF4240'
+                        'primary-color': '#FF4240',
+                        'para-color': '#ffffff99'
 
                     }
                 }
@@ -43,7 +44,7 @@
 
 <body class="mon-rope">
     <!-- header section -->
-    <header class="container mx-auto mt-12 mb-20 p-4">
+    <header class="container mx-auto lg:mt-12 lg:mb-20 mb-4 p-4">
         <!-- nav bar -->
         <nav class="flex justify-between items-center mb-10">
 
@@ -81,14 +82,14 @@
         <section class="lg:relative">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img class="rounded-lg" src="Images/1.png" class="w-full" />
+                    <img src="Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                <div class="rounded-2xl" id="slide2" class="carousel-item relative w-full">
-                    <img  src="Images/2.png" class="w-full" />
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
@@ -110,10 +111,11 @@
                 </div>
             </div>
             <div
-                class="lg:w-[502px] bg-black text-white border-none rounded-md lg:p-8 space-y-4 lg:absolute lg:right-8 lg:bottom-8">
+                class="lg:w-[502px] bg-[#131318] border-none rounded-md lg:p-8 p-3 space-y-4 lg:absolute lg:right-8 lg:bottom-8 mt-4">
                 <h3 class="sm:text-lg lg:text-2xl text-white font-extrabold">Meet all the heroes from the field</h3>
-                <p class="text-left font-medium">
-                    Meet the unsung heroes from various fields, whose dedication and passion shape our world. From healthcare to technology, they embody resilience, innovation, and the spirit of positive change.
+                <p class="text-left font-medium lg:text-xl text-sm text-[#f5e2e2ab]">
+                    Meet the unsung heroes from various fields, whose dedication and passion shape our world. From
+                    healthcare to technology, they embody resilience, innovation, and the spirit of positive change.
                 </p>
             </div>
         </section>
@@ -121,56 +123,55 @@
     <!-- main section : main content -->
     <main class="container mx-auto">
         <!-- hockey club -->
-        <section class="lg:mb-24 p-4">
+        <section class="lg:mb-24 mb-4 sm:p-4">
             <div class="space-y-3 p-4">
-                <h2 class="text-4xl font-extrabold lg:text-center">
+                <h2 class="lg:text-4xl text-xl font-extrabold lg:text-center">
                     Professional Hockeys Club
                 </h2>
-                <p class="lg:w-[607px] lg:mx-auto text-justify">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta excepturi repellendus dolore
-                    possimus, ex et explicabo aperiam unde consequuntur voluptatem. Sequi autem ut rerum iusto eligendi
-                    odit iure? Deleniti, quisquam.
+                <p class="lg:w-[607px] lg:mx-auto text-center">
+
+                    A professional hockey club represents the epitome of sportsmanship, skill, and dedication.
+                    Comprising elite athletes, coaches, and staff, these clubs embody the spirit of competition and
+                    teamwork. From the thunderous sound of skates on the ice to the electrifying cheers of devoted fans,
+                    professional hockey is a captivating spectacle that transcends the boundaries of the rink.
                 </p>
             </div>
-            <div class="grid lg:grid-cols-4 pt-12">
+            <div class="grid lg:grid-cols-4 lg:pt-12 pt-4">
                 <div class="p-5 text-center space-y-2 mr-3">
-                    <div class="radial-progress text-primary" style="--value:85;" role="progressbar">85%</div>
-                    <h3>
+                    <div class="radial-progress text-primar" style="--value:85;" role="progressbar"><span class="text-2xl font-extrabold text-black">85%</span></div>
+                    <h3 class="text-xl font-semibold">
                         Prayer Facility
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
-                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    </h3> 
+                    <p class="text-18 font-normal">
+                        A sacred space for reflection and connection, the prayer facility offers solace, inviting all to find peace within its walls.
                     </p>
                 </div>
                 <div class="p-5 text-center space-y-2 mr-3">
-                    <div class="radial-progress text-secondary" style="--value:65;" role="progressbar">65%</div>
-                    <h3>
-                        Prayer Facility
+                    <div class="radial-progress text-secondary" style="--value:65;" role="progressbar"><span class="text-2xl font-extrabold text-black">70%</span></div>
+                    <h3 class="text-xl font-semibold">
+                        Experienced Coach
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
-                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    <p class="text-18 font-normal">
+                        
+A seasoned guide, the experienced coach brings wisdom, strategy, and inspiration to nurture talent and drive success in athletes.
                     </p>
                 </div>
                 <div class="p-5 text-center space-y-2 mr-3">
-                    <div class="radial-progress text-errpr" style="--value:78;" role="progressbar">78%</div>
-                    <h3>
-                        Prayer Facility
-                    </h3>
+                    <div class="radial-progress text-errpr" style="--value:78;" role="progressbar"><span class="text-2xl font-extrabold text-black">79%</span></div>
+                    <h3 class="text-xl font-semibold">
+                        Senior Player
+                    </h3 class="text-18 font-normal">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
-                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                        Senior player, a seasoned expert in the game, brings leadership, experience, and skill to the team, enriching every match with expertise.
                     </p>
                 </div>
                 <div class="p-5 text-center space-y-2 mr-3">
-                    <div class="radial-progress text-success" style="--value:60;" role="progressbar">60%</div>
-                    <h3>
-                        Prayer Facility
+                    <div class="radial-progress text-success" style="--value:73;" role="progressbar"><span class="text-2xl font-extrabold text-black">73%</span></div>
+                    <h3 class="text-xl font-semibold">
+                        Training Ground
                     </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus quidem ullam
-                        voluptates officiis. Sequi sit unde quo soluta mollitia.
+                    <p class="text-18 font-normal">
+                        Training ground, where dedication meets preparation. A vital space for honing skills, fostering teamwork, and shaping champions for success.
                     </p>
                 </div>
             </div>
